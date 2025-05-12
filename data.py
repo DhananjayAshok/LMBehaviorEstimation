@@ -1695,17 +1695,17 @@ class JSON:
 
 
 def do_mcqa():
-    #process_mmlu()
-    #process_cosmoqa()
-    #process_piqa()
-    #process_arc()
-    #process_medmcqa()
-    #process_commonsenseqa()
-    #process_openbookqa()
-    #process_qasc()
-    #process_hellaswag()
-    #process_bigbenchhard()
-    #process_truthfulqa()
+    process_mmlu()
+    process_cosmoqa()
+    process_piqa()
+    process_arc()
+    process_medmcqa()
+    process_commonsenseqa()
+    process_openbookqa()
+    process_qasc()
+    process_hellaswag()
+    process_bigbenchhard()
+    process_truthfulqa()
     mcqa = MCQA()
     mcqa.setup_mmlu()
     mcqa.setup_cosmoqa()
@@ -1791,12 +1791,27 @@ def do_confidence():
     confidence = Confidence()
     confidence.setup_naturalqa()
 
-def do_bullet():
+def do_format():
     bullets = Bullets()
     bullets.setup_naturalqa()
+    bullets.setup_msmarco()
+    bullets.setup_triviaqa()
+
+    json = JSON()
+    json.setup_naturalqa()
+    json.setup_msmarco()
+    json.setup_triviaqa()
 
     
 if __name__ == "__main__":
-    sentiment = Sentiment()
-    sentiment.setuptwitterfinance_extras()
+    do_unanswerable()
+    do_mcqa()
+    do_sentiment()
+    do_jailbreak()
+    do_factverification()
+    do_news_topic()
+    do_toxicity()
+    do_confidence()
+    do_format()
+
     

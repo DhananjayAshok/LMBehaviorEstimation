@@ -1,0 +1,11 @@
+click
+pandas
+numpy
+scikit-learn
+tqdm
+matplotlib
+seaborn
+datasets
+torch
+transformers
+accelerate

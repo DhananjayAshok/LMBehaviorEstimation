@@ -1,16 +1,15 @@
 declare -A tasks_and_datasets=(
-    #["mcqa_2_ops"]="mmlu cosmoqa piqa arc medmcqa commonsenseqa openbookqa qasc truthfulqa"
-    #["unanswerable"]="selfaware known_unknown"
-    #["jailbreak"]="jailbreak_prompts"
-    #["sentiment"]="amazonreviews yelp twitterfinance twittermteb auditorsentiment newsmtc imdb financial_phrasebank dair_emotion sst5"
-    #["topic"]="nytimes bbcnews agnews"
-    #["fv"]="healthver climatefever fever"
-    #["toxicity"]="unintended_jigsaw jigsaw"
-    #["confidence"]="naturalqa msmarco triviaqa"
-    #["bullets"]="msmarco triviaqa"
-    #["json"]="naturalqa triviaqa"
-    #["verbconfidence"]="naturalqa msmarco triviaqa"
-    ["sentiment"]="twitterfinance_u twitterfinance_l"
+    ["mcqa_2_ops"]="mmlu cosmoqa piqa arc medmcqa commonsenseqa openbookqa qasc truthfulqa"
+    ["unanswerable"]="selfaware known_unknown"
+    ["jailbreak"]="jailbreak_prompts"
+    ["sentiment"]="amazonreviews yelp twitterfinance twittermteb auditorsentiment newsmtc imdb financial_phrasebank dair_emotion sst5"
+    ["topic"]="nytimes bbcnews agnews"
+    ["fv"]="healthver climatefever fever"
+    ["toxicity"]="unintended_jigsaw jigsaw"
+    ["confidence"]="naturalqa msmarco triviaqa"
+    ["bullets"]="naturalqa msmarco triviaqa"
+    ["json"]="naturalqa naturalqa triviaqa"
+    ["verbconfidence"]="naturalqa msmarco triviaqa"
 )
 
 splits=("train" "test")

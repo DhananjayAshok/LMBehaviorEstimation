@@ -11,9 +11,8 @@ declare -A standard_tasks_and_datasets=(
     ["toxicity"]="unintended_jigsaw jigsaw"
     ["confidence"]="naturalqa msmarco triviaqa"
     ["bullets"]="naturalqa msmarco triviaqa"
-    #["json"]="naturalqa triviaqa"
+    ["json"]="naturalqa msmarco triviaqa"
     ["verbconfidence"]="naturalqa msmarco triviaqa"
-    #["sentiment"]="twitterfinance_u twitterfinance_l"
 )
 
 
